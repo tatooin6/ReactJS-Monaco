@@ -1,13 +1,13 @@
 {
   "name": "react-monaco-editor-browser-example",
   "private": true,
+  "proxy": "https://localhost:44306",
   "version": "0.0.0",
   "description": "Monaco Editor for React",
   "scripts": {
     "start": "webpack serve --hot --inline --progress --port 8886"
   },
-  "authors": [
-  ],
+  "authors": [],
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.13.14",
@@ -24,6 +24,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-monaco-editor": "latest"

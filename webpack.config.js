@@ -50,5 +50,13 @@ module.exports = {
       languages: ["json", "javascript", "typescript"],
     }),
   ],
-  devServer: { contentBase: "./" },
+  devServer: { 
+    allowedHosts: ['localhost:5001', 'localhost:8886'],
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+    }
+  },
 };
+//devServer: { contentBase: "./" },
